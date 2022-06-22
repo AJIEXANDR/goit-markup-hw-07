@@ -24,7 +24,7 @@ body {
   /* outline: 2px solid tomato; */
 }
 
-.visually-hidden, .portfolio-title {
+.visually-hidden  {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -55,7 +55,7 @@ body {
 }
 
 /*------------------------------------------------------Logo--------------------------------------------------*/
-.logo {
+.page-header__logo {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
@@ -65,7 +65,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.logo > span {
+.page-header__text {
   color: var(--web-element-color);
 }
 
@@ -75,24 +75,26 @@ body {
   display: flex;
   align-items: center;
 }
-.nav {
+.page-header__nav {
   display: flex;
   align-items:baseline;
 }
 
-.nav-list {
+.page-header__list {
   margin-left: 93px;
   display: flex;
 }
- .nav-item+.nav-item {
+
+.page-header__item {
+  position: relative;
   margin-left: 50px;
 }
 
-.nav-item {
-  position: relative;
+.page-header__item:first-child {
+  margin-left: 0;
 }
 
-.nav-link::after {
+.page-header__link--current::after {
   position: absolute;
   left: 0px;
   bottom: -1px;
@@ -101,18 +103,9 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--active-element-color);
-  opacity: 0;
 } 
 
-.nav-one::after{
-  opacity: 1;
-}
-
-.nav-two::after {
-  opacity: 1;
-}
-
-.nav-link {
+.page-header__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -123,20 +116,25 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.page-header__link:hover,
+.page-header__link:focus {
   color: var(--active-element-color);
 } 
 /* -------------------------------------------------------------------------------------------------------------------- */
-.email-tel {
+.contacts {
 display: flex;
 margin-left: auto;
 }
-.email-tel .item-icon+.item-icon {
+
+.contacts__item {
   margin-left: 50px;
 }
 
-.list-link {
+.contacts__item:first-child {
+  margin-left: 0;
+}
+
+.contacts__link {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -146,16 +144,17 @@ margin-left: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-link:hover, .list-link:focus {
+.contacts__link:hover, 
+.contacts__link:focus {
   color: var(--active-element-color);
 }
 
-.icon-contacts {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.email-tel .item-icon {
+.contacts__item {
   display: flex;
   align-items: center;
 }
@@ -698,12 +697,8 @@ margin-bottom: 50px;
 }
 
 /* ----------------------------------------------------------Portfolio---------------------------------------------------------- */
-.header-portfolio {
+.portfolio-header {
   border-bottom:1px solid #ECECEC;
-}
-
-.portfolio-title {
-  margin: 0;
 }
 
 .porfolio-list {

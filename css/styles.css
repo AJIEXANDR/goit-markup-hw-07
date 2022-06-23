@@ -271,20 +271,21 @@ margin-left: auto;
 
 .form-item {
   position: relative;
+  /* outline: 1px solid tomato; */
 }
 
-.form-item:focus-within> .form-icon {
+.form-item:focus-within .form-icon {
   fill: var(--active-element-color);
 }
 
-.form-item:focus-within > input, .form-item:focus-within > textarea  {
+.form-item:focus-within  input, .form-item:focus-within  textarea  {
   border: 1px solid var(--active-element-color);
 }
 
 .form-icon {
   position: absolute;
+  top: 50%;
   left: 12px;
-  bottom: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

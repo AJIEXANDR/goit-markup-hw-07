@@ -286,6 +286,10 @@ display: flex;
   position: relative;
 }
 
+.our-job__image {
+  display: block;
+}
+
 .img-title {
   position: absolute;
   left: 0;

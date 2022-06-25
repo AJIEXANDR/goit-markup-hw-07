@@ -923,10 +923,10 @@ margin-bottom: 50px;
   text-decoration-line: underline;
 }
 
-/* .checkbox-input:focus+.checkbox-icon {
+.checkbox-input:focus+.checkbox-icon {
   border: 2px solid blue;
   outline: 1px solid var(--active-element-color);
-} */
+}
 
 /* .checkbox-input:checked+.checkbox-icon {
   background-color: var(--active-element-color);

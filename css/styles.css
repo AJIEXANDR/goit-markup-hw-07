@@ -269,15 +269,15 @@ display: flex;
  padding-bottom: 94px;
 }
 
-.our-job-list{
+.our-job__list{
 display: flex;
 }
 
-.our-job-list .item+.item {
+.our-job__item:nth-child(n+2) {
   margin-left: 30px;
 }
 
-.our-job-title {
+.our-job__title {
  margin-top: 0px;
  margin-bottom: 50px;
 }
@@ -300,7 +300,7 @@ display: flex;
   padding-bottom: 27px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.img-title h3 {
+.img-title__text {
   margin: 0%;
   text-align: center;
   font-size: 14px;

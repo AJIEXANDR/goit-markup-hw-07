@@ -9,19 +9,10 @@
     display: flex;
     align-items: baseline;
 
-    .page-header__logo {
-            font-size: 26px;
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: 0.03em;
-            font-family: "Raleway", sans-serif;
-            text-decoration: none;
-            color: $primary-text-color;
-    
-            .page-header__text {
-                color: $web-element-color;
-            }
-        }
+    .page-header__logo{
+        @extend %logo;
+    }
+   
 }
 
  .page-header__list {
